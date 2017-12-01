@@ -1,7 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Sibala_Shinchu
+namespace Sibala_Hsinchu
 {
     [TestClass]
     public class UnitTest1
