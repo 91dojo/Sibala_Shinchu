@@ -8,7 +8,7 @@ namespace Sibala_Hsinchu
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void GetResult_input_1_2_3_4_should_be_no_points()
         {
             var input = new List<int> {1, 2, 3, 4};
             var target = new Sibala();
