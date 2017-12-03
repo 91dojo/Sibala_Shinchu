@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Dice.cs" />
     <Compile Include="DiceDto.cs" />
+    <Compile Include="DiceTests.cs" />
     <Compile Include="ISibala.cs" />
     <Compile Include="Sibala.cs" />
     <Compile Include="UnitTest1.cs" />

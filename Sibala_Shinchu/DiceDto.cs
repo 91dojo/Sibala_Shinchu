@@ -1,7 +1,14 @@
-﻿namespace Sibala_Hsinchu
+﻿using System;
+
+namespace Sibala_Hsinchu
 {
     public class DiceDto
     {
+        public DiceDto(int point, StatusEnum status)
+        {
+            this.DicePoints = point;
+            this.Status = status;
+        }
         public enum StatusEnum { SameColor, NoPoints, Points }
 
         public StatusEnum Status { get; set; }
