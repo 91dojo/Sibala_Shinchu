@@ -57,6 +57,43 @@ namespace Sibala_Hsinchu
             CompareAreEqual(diceA, diceB, expected);
         }
 
+
+        //[TestMethod]
+        //public void CompareTest_1_Same_4_Same_should_be_n1()
+        //{
+        //    var diceA = new DiceDto(1, DiceDto.StatusEnum.SameColor);
+        //    var diceB = new DiceDto(4, DiceDto.StatusEnum.SameColor);
+        //    var expected = 1;
+        //    CompareAreEqual(diceA, diceB, expected);
+        //}
+
+        //[TestMethod]
+        //public void CompareTest_4_Same_2_Same_should_be_n1()
+        //{
+        //    var diceA = new DiceDto(4, DiceDto.StatusEnum.SameColor);
+        //    var diceB = new DiceDto(2, DiceDto.StatusEnum.SameColor);
+        //    var expected = 1;
+        //    CompareAreEqual(diceA, diceB, expected);
+        //}
+
+        //[TestMethod]
+        //public void CompareTest_1_Same_2_Same_should_be_n1()
+        //{
+        //    var diceA = new DiceDto(1, DiceDto.StatusEnum.SameColor);
+        //    var diceB = new DiceDto(2, DiceDto.StatusEnum.SameColor);
+        //    var expected = 1;
+        //    CompareAreEqual(diceA, diceB, expected);
+        //}
+
+//[TestMethod]
+//        public void CompareTest_4_Same_5_Same_should_be_n1()
+//        {
+//            var diceA = new DiceDto(4, DiceDto.StatusEnum.SameColor);
+//            var diceB = new DiceDto(5, DiceDto.StatusEnum.SameColor);
+//            var expected = 1;
+//            CompareAreEqual(diceA, diceB, expected);
+//        }
+
         private static void CompareAreEqual(DiceDto diceA, DiceDto diceB, int expected)
         {
             var target = new Dice();
