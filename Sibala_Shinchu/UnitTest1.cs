@@ -8,16 +8,8 @@ namespace Sibala_Hsinchu
         [TestMethod]
         public void CompareTest_1_Same_1_Same()
         {
-            var diceA = new DiceDto()
-            {
-                Status = DiceDto.StatusEnum.SameColor,
-                DicePoints = 1
-            };
-            var diceB = new DiceDto()
-            {
-                Status = DiceDto.StatusEnum.SameColor,
-                DicePoints = 1
-            };
+            var diceA = new DiceDto(1, DiceDto.StatusEnum.SameColor);
+            var diceB = new DiceDto(1, DiceDto.StatusEnum.SameColor);
 
             var expected = 0;
             CompareAreEqual(diceA, diceB, expected);
