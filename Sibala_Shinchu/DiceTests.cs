@@ -39,20 +39,20 @@ namespace Sibala_Hsinchu
         }
 
         [TestMethod]
-        public void CompareTest_2_Same_1_Same_should_be_1()
+        public void CompareTest_3_Same_2_Same_should_be_1()
         {
-            var diceA = new DiceDto(2, DiceDto.StatusEnum.SameColor);
-            var diceB = new DiceDto(1, DiceDto.StatusEnum.SameColor);
+            var diceA = new DiceDto(3, DiceDto.StatusEnum.SameColor);
+            var diceB = new DiceDto(2, DiceDto.StatusEnum.SameColor);
             var expected = 1;
             CompareAreEqual(diceA, diceB, expected);
         }
 
 
         [TestMethod]
-        public void CompareTest_1_Same_2_Same_should_be_n1()
+        public void CompareTest_2_Same_3_Same_should_be_n1()
         {
-            var diceA = new DiceDto(1, DiceDto.StatusEnum.SameColor);
-            var diceB = new DiceDto(2, DiceDto.StatusEnum.SameColor);
+            var diceA = new DiceDto(2, DiceDto.StatusEnum.SameColor);
+            var diceB = new DiceDto(3, DiceDto.StatusEnum.SameColor);
             var expected = -1;
             CompareAreEqual(diceA, diceB, expected);
         }
