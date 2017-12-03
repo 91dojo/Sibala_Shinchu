@@ -6,11 +6,10 @@ namespace Sibala_Hsinchu
     public class DiceTests
     {
         [TestMethod]
-        public void CompareTest_1_Same_1_Same()
+        public void CompareTest_1_Same_1_Same_should_be_0()
         {
             var diceA = new DiceDto(1, DiceDto.StatusEnum.SameColor);
             var diceB = new DiceDto(1, DiceDto.StatusEnum.SameColor);
-
             var expected = 0;
             CompareAreEqual(diceA, diceB, expected);
         }
