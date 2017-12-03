@@ -16,7 +16,7 @@ namespace Sibala_Hsinchu
             };
             var diceB = new DiceDto()
             {
-                Status = DiceDto.StatusEnum.Points,
+                Status = DiceDto.StatusEnum.SameColor,
                 DicePoints = 1
             };
 

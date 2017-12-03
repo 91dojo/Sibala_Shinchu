@@ -1,4 +1,6 @@
-﻿namespace Sibala_Hsinchu
+﻿using System;
+
+namespace Sibala_Hsinchu
 {
     internal class Dice
     {
@@ -8,7 +10,10 @@
 
         public int Compare(DiceDto diceA, DiceDto diceB)
         {
-            throw new System.NotImplementedException();
+            if (diceA.Status == diceB.Status)
+                return 0;
+
+            throw new NotImplementedException();
         }
     }
 }
