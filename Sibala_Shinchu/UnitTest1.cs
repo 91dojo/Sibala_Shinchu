@@ -8,6 +8,7 @@ namespace Sibala_Hsinchu
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }
