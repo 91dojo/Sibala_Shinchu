@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Sibala_Hsinchu
 {
     [TestClass]
-    public class UnitTest1
+    public class SibalaTest
     {
         [TestMethod]
         public void GetResult_input_1_2_3_4_should_be_no_points()
