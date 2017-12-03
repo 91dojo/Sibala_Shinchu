@@ -8,7 +8,6 @@ namespace Sibala_Hsinchu
         [TestMethod]
         public void CompareTest_1_Same_1_Same()
         {
-            var target = new Dice();
             var diceA = new DiceDto()
             {
                 Status = DiceDto.StatusEnum.SameColor,
@@ -21,9 +20,13 @@ namespace Sibala_Hsinchu
             };
 
             var expected = 0;
+            CompareAreEqual(diceA, diceB, expected);
+        }
 
+        private static void CompareAreEqual(DiceDto diceA, DiceDto diceB, int expected)
+        {
+            var target = new Dice();
             var actual = target.Compare(diceA, diceB);
-
             Assert.AreEqual(expected, actual);
         }
     }
