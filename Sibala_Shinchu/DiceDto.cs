@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Sibala_Hsinchu
 {
@@ -13,5 +14,6 @@ namespace Sibala_Hsinchu
 
         public StatusEnum Status { get; set; }
         public int DicePoints { get; set; }
+        public List<int> SourceSibala { get; set; }
     }
 }
