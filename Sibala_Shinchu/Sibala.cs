@@ -28,6 +28,10 @@ namespace Sibala_Hsinchu
             }
             sum = dicTemp.Where(o => o.Value == 1).Select(o=>o.Key).Sum();
 
+            if (sum == 3)
+            {
+                return "BG";
+            }
             return $"{sum} points";
         }
 

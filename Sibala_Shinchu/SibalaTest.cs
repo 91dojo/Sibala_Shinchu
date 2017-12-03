@@ -32,5 +32,21 @@ namespace Sibala_Hsinchu
             //assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void GetResult_input_5_1_5_2_Should_Be_BG()
+        {
+            //arrange
+            input = new List<int> { 5, 1, 5, 2 };
+            var target = new Sibala();
+            var expected = "BG";
+
+            //act
+            var actual = target.GetResult(input);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
