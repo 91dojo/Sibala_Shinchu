@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Collections;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Sibala_Hsinchu
 {
@@ -8,7 +9,9 @@ namespace Sibala_Hsinchu
         [TestMethod]
         public void TestMethod1()
         {
-            // Test
+            var target = new Dice();
+
+
         }
     }
 }
