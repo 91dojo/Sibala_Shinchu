@@ -17,12 +17,4 @@ namespace Sibala_Hsinchu
             Assert.AreEqual(expected,actual);
         }
     }
-
-    public class Sibala
-    {
-        public string GetResult(List<int> input)
-        {
-            return "no points";
-        }
-    }
 }
