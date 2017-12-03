@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace Sibala_Hsinchu
@@ -18,20 +19,25 @@ namespace Sibala_Hsinchu
             if (tranfrom.Count() == 4)
                 return "no points";
 
-            var dicTemp = new Dictionary<int,int>();
-            foreach (int val in input)
-            {
-                if(!dicTemp.ContainsKey(val))
-                    dicTemp.Add(val,0);
+            var dicTemp = from val in input
+                group val by val into v1
+                select new KeyValuePair<int, int>(v1.Key, v1.Count());
 
-                dicTemp[val]++;
+            if(dicTemp.Count()>2)
+                sum = dicTemp.Where(o => o.Value == 1).Select(o=>o.Key).Sum();
+            else if(dicTemp.Count()==2)
+            {
+                int bigger = dicTemp.Select(o => o.Key).Max();
+                sum = bigger * 2;
             }
-            sum = dicTemp.Where(o => o.Value == 1).Select(o=>o.Key).Sum();
+            else if (dicTemp.Count() == 1)
+                return "same color";
 
             if (sum == 3)
-            {
                 return "BG";
-            }
+            else if (sum == 12)
+                return "Sibala";
+
             return $"{sum} points";
         }
 

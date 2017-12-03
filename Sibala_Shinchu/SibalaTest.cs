@@ -48,5 +48,35 @@ namespace Sibala_Hsinchu
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void GetResult_input_1_6_1_6_Should_Be_Sibala()
+        {
+            //arrange
+            input = new List<int> { 1, 6, 1, 6 };
+            var target = new Sibala();
+            var expected = "Sibala";
+
+            //act
+            var actual = target.GetResult(input);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void GetResult_input_1_1_1_1_Should_Be_Same_Color()
+        {
+            //arrange
+            input = new List<int> { 1, 1, 1, 1 };
+            var target = new Sibala();
+            var expected = "same color";
+
+            //act
+            var actual = target.GetResult(input);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
