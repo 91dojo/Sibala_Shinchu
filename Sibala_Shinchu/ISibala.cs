@@ -4,6 +4,8 @@ namespace Sibala_Hsinchu
 {
     public interface ISibala
     {
-        List<DiceDto> ReturnDices();
+        IEnumerable<DiceDto> ReturnDices();
+
+        int GetMaxPointExceptSameColor(List<int> source);
     }
 }

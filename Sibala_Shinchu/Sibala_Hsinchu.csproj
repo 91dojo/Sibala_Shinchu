@@ -53,7 +53,7 @@
     <Compile Include="DiceTests.cs" />
     <Compile Include="ISibala.cs" />
     <Compile Include="Sibala.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="SibalaTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
